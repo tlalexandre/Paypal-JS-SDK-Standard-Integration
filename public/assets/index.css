@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@601&display=swap');
+
+body{
+    background-color: #bbdef7;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #031725;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+.shadow{
+    box-shadow:11px -1px 0px #031725;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.product-container{
+    padding: 20px;
+    background-color: #f5c1ee;
+    color: #031725;
+    border: 4px solid #031725;
+    border-radius: 10%;
+    text-align: center;
+}
+.product{
+    max-height: 500px;
+    border-radius: 10%;
+    border: 2px solid #031725;
+}
+
