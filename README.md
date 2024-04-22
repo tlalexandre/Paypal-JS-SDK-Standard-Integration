@@ -1,6 +1,6 @@
 # PayPal JS SDK Integration Standard Checkout
 
-![heroPage](.\doc\heroPage.png)
+![heroPage](./doc/heroPage.png)
 
 ## Goals
 
