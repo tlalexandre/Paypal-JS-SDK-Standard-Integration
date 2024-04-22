@@ -101,7 +101,9 @@ window.paypal
           `Sorry, your transaction could not be processed...<br><br>${error}`,
         );
       }
-      document.getElementById('refundButton').disabled = false;
+      
+      document.getElementById('refundButton').style.display = "block";
+
     },
     style: {
       borderRadius: 50,
@@ -116,14 +118,20 @@ function resultMessage(message) {
   container.innerHTML = message;
 }
 
-document.getElementById('refundButton').addEventListener('click', async () => {
+document.getElementById('refundButton').addEventListener('click', async (event) => {
   try {
+    // Disable the button
+    event.target.style.display = "none";
+
     const response = await fetch(`/api/captures/${captureID}/refund`, { method: 'POST' });
     const data = await response.json();
 
     document.getElementById('result-message').innerHTML = `Refund ${data.status}: ${data.id}`;
-  }catch{
-    console.error('Failed to refund capture:'+ error);
+  } catch (error) {
+    console.error('Failed to refund capture:' + error);
+
+    // Re-enable the button in case of error
+    event.target.style.display = "block";
   }
 });
 }
