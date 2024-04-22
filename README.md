@@ -51,5 +51,8 @@ You can then connect your Heroku app with your GitHub repository by using the He
 
 Make sure to add your environment variables (PAYPAL_CLIENT_ID and PAYPAL_CLIENT_SECRET) in the Settings sections of Heroku to be able to connect to the SDK once deployed.
 
+## Notes
 
+I left the different console.log present in the SDK setup to be able to track what's happening in the application, since it's a demonstration . 
+However, in a real-life scenario, make sure to remove any console.log to avoid to display secret informations.
 
