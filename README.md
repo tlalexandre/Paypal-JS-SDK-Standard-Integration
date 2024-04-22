@@ -2,6 +2,10 @@
 
 ![heroPage](./doc/heroPage.png)
 
+Link to the deployed website:https://paypal-sdk-standard-351a5bf59fb1.herokuapp.com/
+
+
+
 ## Goals
 
 I set up a PayPal JS SDK Integration of the Standard Checkout, for an interview at the company. 
